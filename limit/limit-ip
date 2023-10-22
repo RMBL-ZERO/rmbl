@@ -1,13 +1,13 @@
 #!/bin/bash
 
 function send_log(){
-CHATID="5008116231"
-KEY="6638955090:AAESojtt1ZPmuTNESoNHfgyPdU92Ue7d4H4"
+CHATID="6447416716"
+KEY="6571846319:AAFaNBSeRHOmAG2jRLCMUAqo9EuC9XiW420"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="
 <code>────────────────────</code>
-<b>⚠️NOTIF LIMIT IP WINGS⚠️</b>
+<b>⚠️NOTIF LIMIT IP ⚠️</b>
 <code>────────────────────</code>
 <code>Username  : </code><code>$user</code>
 <code>Limit Ip    : </code><code>$jum2</code>
@@ -20,7 +20,7 @@ function vmip(){
 echo -n > /var/log/xray/access.log
 sleep 4
 data=( `ls /etc/kyt/limit/vmess/ip`);
-#Decrypted By WINGS VPN
+#Decrypted By RMBL VPN
     for user in "${data[@]}"
     do
         iplimit=$(cat /etc/kyt/limit/vmess/ip/$user)
@@ -45,7 +45,7 @@ function vlip(){
 echo -n > /var/log/xray/access.log
 sleep 4
 data=( `ls /etc/kyt/limit/vless/ip`);
-#Decrypted By WINGS VPN
+#Decrypted By RMBL VPN
     for user in "${data[@]}"
     do
         iplimit=$(cat /etc/kyt/limit/vless/ip/$user)
@@ -70,7 +70,7 @@ function trip(){
 echo -n > /var/log/xray/access.log
 sleep 4
 data=( `ls /etc/kyt/limit/trojan/ip`);
-#Decrypted By WINGS VPN
+#Decrypted By RMBL VPN
     for user in "${data[@]}"
     do
         iplimit=$(cat /etc/kyt/limit/trojan/ip/$user)
